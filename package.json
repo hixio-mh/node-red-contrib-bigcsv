@@ -4,7 +4,8 @@
   "description": "A Big CSV parser",
   "dependencies": {
     "csv": "^0.4.6",
-    "node-red-biglib": "^1.3.0"
+    "node-red-biglib": "^1.3.0",
+    "@snyk/protect": "latest"
   },
   "keywords": [
     "node-red"
@@ -23,5 +24,10 @@
     "url": "https://github.com/Jacques44/node-red-contrib-bigcsv/issues"
   },
   "homepage": "https://github.com/Jacques44/node-red-contrib-bigcsv",
-  "_id": "node-red-contrib-bigcsv@1.2.0"
+  "_id": "node-red-contrib-bigcsv@1.2.0",
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
